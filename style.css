@@ -110,7 +110,69 @@ header {
   
 }
 
+/* section hero */ 
+
+.hero {
+  display: flex;
+  height: 80vh;
+  padding: 20px 130px;
+}
+
+.hero-image {
+  text-align: center;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.hero-image__img {
+  width: 80%;
+  height: 90%;
+}
+
+.hero-info,
+.hero-image {
+  flex: 1;
+}
+
+.hero-info {
+  align-self: center;
+}
+
+.hero-info__title {
+  font-size: calc(var(--pgraph-size) + 5.9rem);
+  margin-right: 70px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
 
 
+.hero-info__pgraph {
+  color: var(--gris);
+  padding: 0 150px 0 0;
+  line-height: 30px;
+  
+}
 
+.hero-info__button {
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: 2px solid var(--negro);
+  background: var(--negro);
+  color: var(--blanco);
+}
 
+.hero-info__button:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--gris);
+  border: 2px solid var(--gris);
+}
+
+.company-icons {
+  margin: 80px 0 0 0;
+}
+
+.company-icon {
+  display: inline-block;
+  margin-right: 30px;
+}
