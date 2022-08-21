@@ -11,7 +11,7 @@
 
     --font-family: 'Epilogue', sans-serif;
     --medium: 500; 
-    --bold: 700
+    --bold: 700;
     --pgraph-size: 1.8rem;
 
   /* Tamaños */ 
@@ -27,9 +27,90 @@ html {
   font-family: var(--font-family);
 }
 
+body {
+  font-size: var(--pgraph-size);
+  padding: 0;
+  margin: 0;
+}
+
 p {
   font-size: 1.8rem;
 }
+
+/* Header */ 
+
+header, 
+.header-container-1 {
+  display: flex;
+}
+
+.header-contaiiner-2 {
+  margin-top: -15px
+}
+
+header {
+  height: 50px;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px 20px;
+  
+}
+
+.header_logo {
+  width: 100px;
+  height: 40px;
+}
+
+.header-nav-ul {
+  display: flex;
+  list-style: none;
+  width: 400px;
+  margin-top: 0;
+}
+
+.header-nav-link {
+  margin-right: 30px;
+  text-decoration: none;
+  color: var(--gris);
+}
+
+.header-nav-link:hover {
+  color: var(--negro)'';
+}
+
+.button {
+  font-size: var(--pgraph-size);
+  color: var(--gris);
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button-login {
+  border: none;
+  background-color: transparent;
+  margin-right: 30px;
+}
+
+.button-login:hover {
+  color: var(--negro);
+}
+
+.button-register {
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: 2px solid var(--gris);
+  background: transparent;
+}
+
+.button-register:hover {
+  background-color: var(--negro);
+  color: white;
+  
+}
+
+
 
 
 
